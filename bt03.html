@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt03</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("nhap so phan cua mang: ")) ;//nhap so phan tu cua mang
+        var arrayX =new Array(n);
+        var index = 0; //so phan tu lon nhat
+        alert("nhap "+ n + " so nguyen bat ky");
+        for (var i = 0; i < arrayX.length ; i++) {
+            x = parseInt(prompt("so nguyen thu" + (i)));
+            arrayX[i] = x;
+        }
+            //vong lap nhap 10 so nguyen
+        var maxX = arrayX[0]; //gia tri max la phan tu dau tien
+        for (i = 0; i < arrayX.length;i++) {
+            if (arrayX[i] > maxX) {
+                maxX = arrayX[i];
+                index = i++;
+            }
+        }
+            alert(" max " + maxX + " vi tri " + index);
+            //vong lap tim gia tri lon nhat
+        var sum = 0; //gia tri tong ban dau
+        for (i = 0;  i < arrayX.length; i++) {
+                sum = sum + i;
+        }
+            document.write("tong la: " + sum + '<br>');
+        var trungBinh = sum/arrayX.length;
+            document.write("trung binh la: " + trungBinh);
+    </script>
+</body>
+</html>

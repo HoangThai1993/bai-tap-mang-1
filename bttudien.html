@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT tu dien</title>
+</head>
+<body>
+    <input type="text" id="inputs">
+    <button type="submit" id="btnT" onclick="search()" value="btnT">Tim Kiem!!!</button>
+    <script>
+        var arrayX = ["computer","deck","pen","mouse","bottle"];
+        var arrayY = ["may tinh","cai ban","cai but","con chuot","cai chai"];
+        function search() {
+            Z = document.getElementById("inputs").value;
+            for (i = 0; i < arrayX.length ; i++) {
+                if (Z === arrayX[i]) {
+                    alert(" nghia cua tu " + Z + " la " + arrayY[i]);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

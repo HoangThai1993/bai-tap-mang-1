@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt01</title>
+</head>
+<body>
+    <script>
+        var arrayX =new Array(10);
+
+        alert("nhap 10 so nguyen bat ky");
+        for (var i = 1; i < arrayX.length ; i++) {
+            x = parseInt(prompt("so nguyen thu" + (i)));
+            arrayX[i] = x;
+        }
+        //vong lap nhap gia tri cho mang
+        var countY = 0;//bien dem so lon hon 10
+        for (var i = 0 ; i < arrayX.length ; i++) {
+            if (arrayX[i] >= 10) {
+                countY = countY + 1;
+            }
+        }
+        alert("so gia tri lon hon 10 la: " + countY + " so");
+        // vong lap tim gia tri lon hon 10
+    </script>
+</body>
+</html>
